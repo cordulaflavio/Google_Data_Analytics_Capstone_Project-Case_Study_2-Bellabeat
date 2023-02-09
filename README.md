@@ -6,7 +6,7 @@
 #### Bellabeat Fitness Data Analysis
 
 ---
-Author: Flavio Ribeiro Córdula |   
+Author: Flavio Ribeiro Córdula  
 
 [![text](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/flavio-ribeiro-córdula-632a19234)
 
@@ -16,20 +16,10 @@ End date: XX/XX/XXXX
 
 ---
 
-This Case Study follows the six data analysis phases by Google:
+### Case Study info:
 
-Phase 1 - ASK
+- This Case Study follows the six data analysis phases designed by Google and makes use of PostgreSQL and Tableau. 
 
-Phase 2 - PREPARE
-
-Phase 3 - PROCESS 
-
-Phase 4 - ANALYZE
-
-Phase 5 - SHARE
-
-Phase 6 - ACT
-
-
+### Phase 1: ASK
 
 
