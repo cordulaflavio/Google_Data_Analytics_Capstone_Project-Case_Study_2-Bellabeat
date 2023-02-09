@@ -3,7 +3,7 @@
 ###### This 'Capstone Project' has been completed to meet the [Google Data Analytics Professional Certificate - Coursera](https://www.coursera.org/professional-certificates/google-data-analytics) requirements.
 
 ### Case Study 2: How Can a Wellness Technology Company Play It Smart?
-#### Bellabeat Fitness Data Analysis
+###### Bellabeat Fitness Data Analysis
 
 ---
 Author: Flavio Ribeiro Córdula  
