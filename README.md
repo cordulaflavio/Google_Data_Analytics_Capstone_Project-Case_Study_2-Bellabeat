@@ -56,3 +56,9 @@ Membership gives users 24/7 access to fully personalized guidance on nutrition, 
 - Dataset
 
 	- The dataset used in this Case Study can be accessed via [Kaggle](https://www.kaggle.com/datasets/arashnic/fitbit) and correspond to data of FitBit Fitness Tracker (a smartwatch) with personal fitness information such heart rate, calories, etc.
+
+### Phase 2: PREPARE
+
+- 
+
+
