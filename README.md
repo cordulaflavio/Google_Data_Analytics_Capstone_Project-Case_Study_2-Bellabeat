@@ -19,6 +19,7 @@ End date: XX/XX/XXXX
 ### Case Study info:
 
 - This Case Study follows the six data analysis phases designed by Google and makes use of PostgreSQL and Tableau. 
+- The data used can be acessed via [kaggle](FitBit Fitness Tracker Data). 
 
 ### Phase 1: ASK
 
