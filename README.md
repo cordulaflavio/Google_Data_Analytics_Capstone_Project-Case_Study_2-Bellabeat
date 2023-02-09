@@ -20,7 +20,7 @@ End date: XX/XX/XXXX
 
 - Bellabeat, is a high-tech manufacturer of health-focused products for women. Urška Sršen, cofounder and Chief Creative Officer of Bellabeat, believes that analyzing smart device fitness data could help unlock new growth opportunities for the company.
 
-- Assuming I work for Bellabeat, the task here is to identify consumption patterns in users of FitBit products that can support the Bellabeat's Marketing strategy. 
+- In a nutshel (and assuming I work for Bellabeat), the task here is to identify consumption patterns in users of FitBit products that can support the Bellabeat's Marketing strategy. 
 
 - The dataset used in this Case Study can be accessed via [Kaggle](https://www.kaggle.com/datasets/arashnic/fitbit) and correspond to data of a Smartwatch with personal fitness information such heart rate, calories, etc.
 
