@@ -91,6 +91,12 @@ Membership gives users 24/7 access to fully personalized guidance on nutrition, 
 			- Data was collected between 03.12.2016-05.12.2016
 			- Approximately one month worth of data
 
+## Phase 3: PROCESS
+
+- I have chosen to use PostgreSQL and Tableau for this case study. PostgreSQL will be used for cleaning/transforming and data analysis while tableau will be used to build visualizations/dashboards for the stakeholder.
+
+- Loading the data (18 csv files)
+	- all the 18 csv files were loaded into a PostgreSQL database using DBeaver, a SQL client software application and a database administration tool, via the “Import Data” function. The two adjustments I had to do while performing this data transfer was to change the column delimiter to a comma ( , ) and to configure the target type for the id column to int8.
 
 
 
