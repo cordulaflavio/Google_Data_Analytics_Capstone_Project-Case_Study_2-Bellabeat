@@ -90,7 +90,7 @@ Membership gives users 24/7 access to fully personalized guidance on nutrition, 
 	- Limitations:
 		- Small sample size
 			- Only 30 participants
-			- ----- 33 distinct id... checar isso -----
+			- ----- 33 distinct id... checar isso ????????????????????????? -----
 		- Small time frame
 			- Data was collected between 03.12.2016-05.12.2016
 			- Approximately one month worth of data
