@@ -60,7 +60,7 @@ Membership gives users 24/7 access to fully personalized guidance on nutrition, 
  
 ### Phase 2: PREPARE
 
-- Dataset Credibility was verified by checking the information on the website 
+- Dataset Credibility was verified by checking the information on the website:
 
 	- The dataset used in this Case Study can be accessed via [Kaggle](https://www.kaggle.com/datasets/arashnic/fitbit) and corresponds to data of FitBit Fitness Tracker (a smartwatch) with personal fitness information such heart rate, calories, etc.
 
@@ -76,11 +76,11 @@ Membership gives users 24/7 access to fully personalized guidance on nutrition, 
 		- Individual reports can be parsed by export session ID (column A) or timestamp (column B). 
 		- Variation between output represents use of different types of Fitbit trackers and individual tracking behaviors/preferences.  
 
+	- Files
+		- 18 csv files 
+
 	- Metadata
 		- Even though there is some metadata for the dataset, the metadata for the actual files are missing. Some columns are difficult to infer.
-
-	- Files
-		- csv files 
 
 	- Updated
 		- Last update: Dec/2020
