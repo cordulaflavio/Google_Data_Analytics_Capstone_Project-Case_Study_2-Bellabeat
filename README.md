@@ -98,7 +98,9 @@ Membership gives users 24/7 access to fully personalized guidance on nutrition, 
 - Loading the data (18 csv files)
 	- all the 18 csv files were loaded into a PostgreSQL database using DBeaver, a SQL client software application and a database administration tool, via the “Import Data” function. The two adjustments I had to do while performing this data transfer was to change the column delimiter to a comma ( , ) and to configure the target type for the id column to int8.
 	
-https://github.com/flaviocordula/Google_Data_Analytics_Capstone_Project-Case_Study_2-Bellabeat/blob/main/imagens/data_loaded_dbeaver.png
+![alt text](https://github.com/flaviocordula/Google_Data_Analytics_Capstone_Project-Case_Study_2-Bellabeat/blob/main/imagens/data_loaded_dbeaver.png?raw=true)
+
+
 
 - opa
 
