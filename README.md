@@ -60,7 +60,7 @@ Membership gives users 24/7 access to fully personalized guidance on nutrition, 
  
 ### Phase 2: PREPARE
 
-- Dataset Credibility was verified by checking the information on the website as follows 
+- Dataset Credibility was verified by checking the information on the website 
 
 	- The dataset used in this Case Study can be accessed via [Kaggle](https://www.kaggle.com/datasets/arashnic/fitbit) and corresponds to data of FitBit Fitness Tracker (a smartwatch) with personal fitness information such heart rate, calories, etc.
 
