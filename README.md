@@ -53,12 +53,15 @@ Membership gives users 24/7 access to fully personalized guidance on nutrition, 
 
 	- Analyze FitBit Fitness Tracker Data to obtain insights and help guide marketing strategy for Bellabeat to become a larger player in the global smart device market.
 
-- Dataset
-
-	- The dataset used in this Case Study can be accessed via [Kaggle](https://www.kaggle.com/datasets/arashnic/fitbit) and correspond to data of FitBit Fitness Tracker (a smartwatch) with personal fitness information such heart rate, calories, etc.
-
+- Questions:
+	- Question 1
+	- Question 2
+	- ...
+ 
 ### Phase 2: PREPARE
 
+- Dataset
+	- The dataset used in this Case Study can be accessed via [Kaggle](https://www.kaggle.com/datasets/arashnic/fitbit) and correspond to data of FitBit Fitness Tracker (a smartwatch) with personal fitness information such heart rate, calories, etc.
 - 
 
 
