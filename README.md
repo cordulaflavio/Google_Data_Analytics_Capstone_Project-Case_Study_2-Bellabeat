@@ -103,10 +103,12 @@ Membership gives users 24/7 access to fully personalized guidance on nutrition, 
 	
 ![alt text](https://github.com/flaviocordula/Google_Data_Analytics_Capstone_Project-Case_Study_2-Bellabeat/blob/main/imagens/loaded_data_dbeaver.png?raw=true)
 
-
-
-- opa
-
-
+- Getting familiar with the tables and data (see )
+	1. Check for count of distinct participants 
+		- There are 33 different ids. Either the content (description on Kaggle) is wrong, or some participants wore more than one smartwatch.		
+			- I considered here 33 different users (participants) 
+		- Most tables contain 33 distinct users, except for heartrate_seconds_merged with 14 and minutesleep_merged and sleepday_merged with 24. 
+			- From this very simple verification, one can infer that only 14 users monitored their heartrate data and 24 (out of 33) actually used their smartwatch while sleeping.
+	2. dfsdfsdf
 
 
