@@ -122,5 +122,5 @@ Membership gives users 24/7 access to fully personalized guidance on nutrition, 
 			- sleepday_merged
 			- weightloginfo_merged		
 
-- Cleaning the selected tables
+- Cleaning the data from selected tables (see [SQL file](sql/cleaning.sql))
 	- OPA 	
