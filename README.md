@@ -103,7 +103,7 @@ Membership gives users 24/7 access to fully personalized guidance on nutrition, 
 	
 ![alt text](https://github.com/flaviocordula/Google_Data_Analytics_Capstone_Project-Case_Study_2-Bellabeat/blob/main/imagens/loaded_data_dbeaver.png?raw=true)
 
-- Getting familiar with the tables and data (see )
+- Getting familiar with the tables and data (see [aqui](https://github.com/flaviocordula/Google_Data_Analytics_Capstone_Project-Case_Study_2-Bellabeat/blob/main/sql/process) )
 	1. Check for count of distinct participants 
 		- There are 33 different ids. Either the content (description on Kaggle) is wrong, or some participants wore more than one smartwatch.		
 			- I considered here 33 different users (participants) 
