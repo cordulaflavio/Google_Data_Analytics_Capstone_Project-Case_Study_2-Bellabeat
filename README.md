@@ -93,8 +93,6 @@ Membership gives users 24/7 access to fully personalized guidance on nutrition, 
 			- Approximately one month worth of data
 		- No demographic information
 			- age, gender, profession, location
-		- The data is partially is incomplete
-			- A few files have less than 30 distinct participants
 		
 ## Phase 3: PROCESS
 
