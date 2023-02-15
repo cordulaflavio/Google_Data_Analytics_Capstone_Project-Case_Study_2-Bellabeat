@@ -84,13 +84,18 @@ Membership gives users 24/7 access to fully personalized guidance on nutrition, 
 	- License specified: CC0: Public Domain
 
 	- Limitations:
+		- The data is outdated
+			- Collected in 2016
 		- Small sample size
-			- Only 30 participants
-			- ----- 33 distinct id... checar isso ????????????????????????? -----
+			- Only 30 distinct participants
 		- Small time frame
 			- Data was collected between 03.12.2016-05.12.2016
 			- Approximately one month worth of data
-
+		- No demographic information
+			- age, gender, profession, location
+		- The data is partially is incomplete
+			- A few files have less than 30 distinct participants
+		
 ## Phase 3: PROCESS
 
 - I have chosen to use PostgreSQL and Tableau for this case study. PostgreSQL will be used for cleaning/transforming and data analysis while tableau will be used to build visualizations/dashboards for the stakeholder.
