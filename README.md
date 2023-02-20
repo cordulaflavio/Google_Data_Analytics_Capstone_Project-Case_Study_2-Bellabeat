@@ -145,7 +145,7 @@ SET heartrate_time = to_char(to_timestamp(hsm."Time",'mm/dd/yyyy hh12:mi:ss AM,P
 WHERE hsm."Time" IS NOT NULL;
 ```
 
-	- Trim to remove spaces on day_name columns
+- Trim to remove spaces on day_name columns
 	
 ```sql 
 UPDATE 	case_study.heartrate_seconds_merged
@@ -172,8 +172,8 @@ UPDATE 	case_study.weightloginfo_merged
 SET 	weightlog_day_name = trim(weightlog_day_name)
 WHERE 	weightlog_day_name IS NOT NULL;	
 ```
-	- The last cleaning made merged the three hourly tables (hourlycalories_merged, hourlyintensities_merged and hourlysteps_merged) into hourlyactivity_merged (new merged table).
-		- See [SQL cleaning file](sql/cleaning.sql) for more details.
+- The last cleaning made merged the three hourly tables (hourlycalories_merged, hourlyintensities_merged and hourlysteps_merged) into hourlyactivity_merged (new merged table).
+	- See [SQL cleaning file](sql/cleaning.sql) for more details.
 
 ```sql
 CREATE TABLE case_study.hourlyactivity_merged AS ( 
@@ -186,3 +186,10 @@ ORDER BY hm.id, hm.activity_date, hm.activity_hour);
 
 ## Phase 4: ANALYSE
 	
+- The tables to be analysed are:
+	- dailyactivity_merged
+	- heartrate_seconds_merged
+	- hourlyactivity_merged
+	- sleepday_merged
+	- weightloginfo_merged 	
+
