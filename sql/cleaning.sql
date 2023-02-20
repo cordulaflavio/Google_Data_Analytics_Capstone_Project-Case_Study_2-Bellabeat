@@ -148,6 +148,28 @@ SELECT * FROM case_study.sleepday_merged sm -- OK
 ----------------  END cleaning hourlysteps_merged
 
 
+-- need cleaning / split date and time and add day of week
+SELECT * FROM case_study.weightloginfo_merged wm 
 
+----------------  Cleaning weightloginfo_merged
 
+ALTER TABLE case_study.weightloginfo_merged 
+ADD COLUMN weightlog_date date,
+ADD COLUMN weightlog_day_name varchar (15),
+ADD COLUMN weightlog_hour varchar(8);
 
+UPDATE case_study.weightloginfo_merged wm 
+SET weightlog_date = to_date(wm."Date",'mm/dd/yyyy')
+WHERE wm."Date" IS NOT NULL;
+
+UPDATE case_study.weightloginfo_merged wm
+SET weightlog_day_name = to_char(wm.weightlog_date, 'day')
+WHERE wm.weightlog_date IS NOT NULL;
+
+UPDATE case_study.weightloginfo_merged wm
+SET weightlog_hour = to_char(to_timestamp(wm."Date",'mm/dd/yyyy hh12:mi:ss AM,PM'),'hh24:mi:ss')
+WHERE wm."Date" IS NOT NULL;
+
+SELECT * FROM case_study.weightloginfo_merged wm -- OK
+
+----------------  END cleaning weightloginfo_merged
