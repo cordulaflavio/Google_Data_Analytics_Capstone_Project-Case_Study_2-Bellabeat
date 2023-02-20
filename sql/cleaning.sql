@@ -259,5 +259,12 @@ WHERE 	hm.id = 1624580081
 
 --------- END validating this new table
 
-
+-- So, the tables to be used on the next phases are:
+/*
+	dailyactivity_merged
+	heartrate_seconds_merged
+	hourlyactivity_merged
+	sleepday_merged
+	weightloginfo_merged
+ */	
 
