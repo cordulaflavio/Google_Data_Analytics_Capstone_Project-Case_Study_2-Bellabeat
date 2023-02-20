@@ -121,5 +121,33 @@ SELECT * FROM case_study.hourlysteps_merged hm -- OK
 ----------------  END cleaning hourlysteps_merged
 
 
+-- need cleaning / split date and time and add day of week
+SELECT * FROM case_study.sleepday_merged sm
+
+----------------  Cleaning sleepday_merged
+
+ALTER TABLE case_study.sleepday_merged 
+ADD COLUMN sleep_date date,
+ADD COLUMN sleep_day_name varchar (15),
+ADD COLUMN sleep_hour varchar(8);
+
+UPDATE case_study.sleepday_merged sm 
+SET sleep_date = to_date(sm.sleepday,'mm/dd/yyyy')
+WHERE sm.sleepday IS NOT NULL;
+
+UPDATE case_study.sleepday_merged sm
+SET sleep_day_name = to_char(sm.sleep_date, 'day')
+WHERE sm.sleep_date IS NOT NULL;
+
+UPDATE case_study.sleepday_merged sm 
+SET sleep_hour = to_char(to_timestamp(sm.sleepday,'mm/dd/yyyy hh12:mi:ss AM,PM'),'hh24:mi:ss')
+WHERE sm.sleepday IS NOT NULL;
+
+SELECT * FROM case_study.sleepday_merged sm -- OK
+
+----------------  END cleaning hourlysteps_merged
+
+
+
 
 
