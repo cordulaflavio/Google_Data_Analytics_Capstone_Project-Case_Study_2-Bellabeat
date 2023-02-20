@@ -123,6 +123,26 @@ Membership gives users 24/7 access to fully personalized guidance on nutrition, 
 			- weightloginfo_merged		
 
 - Cleaning the data from selected tables (see [SQL file](sql/cleaning.sql))
-	- From the seven selected tables to be cleaned, the first table, dailyactivity_merged, did not need any cleaning. The other six tables needed cleaning and their timestamp columns were split into date ('mm/dd/yyyy'), day of the week and time ('hh24:mi:ss').  
+	- From the seven selected tables to be cleaned, the first table, dailyactivity_merged, did not need any cleaning. The other six tables needed cleaning and their timestamp columns were split into date ('mm/dd/yyyy'), day of the week and time ('hh24:mi:ss'). 
+	- The following sql code does the cleaning for the table heartrate_seconds_merged. For the full sql file, (see [SQL file](sql/cleaning.sql)).   
+
+```sql
+ALTER TABLE case_study.heartrate_seconds_merged 
+ADD COLUMN heartrate_date date,
+ADD COLUMN heartrate_day_name varchar (15),
+ADD COLUMN heartrate_time varchar(8); 
+
+UPDATE case_study.heartrate_seconds_merged hsm 
+SET heartrate_date = to_date(hsm."Time",'mm/dd/yyyy')
+WHERE hsm."Time" IS NOT NULL;
+
+UPDATE case_study.heartrate_seconds_merged hsm 
+SET heartrate_day_name = to_char(heartrate_date, 'day')
+WHERE hsm.heartrate_date IS NOT NULL;
+
+UPDATE case_study.heartrate_seconds_merged hsm 
+SET heartrate_time = to_char(to_timestamp(hsm."Time",'mm/dd/yyyy hh12:mi:ss AM,PM'),'hh24:mi:ss')
+WHERE hsm."Time" IS NOT NULL;
+```
 	
 	
