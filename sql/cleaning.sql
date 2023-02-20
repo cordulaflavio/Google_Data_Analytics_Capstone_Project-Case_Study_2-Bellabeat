@@ -202,3 +202,62 @@ SET 	weightlog_day_name = trim(weightlog_day_name)
 WHERE 	weightlog_day_name IS NOT NULL;
 
 ---------------- END TRIM
+
+
+-- hourly tables seems to have the same ids and activity_date 
+SELECT	hm.id, hm.activityhour, hm2.activityhour, hm3.activityhour 
+FROM 	case_study.hourlycalories_merged hm 
+		INNER JOIN case_study.hourlyintensities_merged hm2 ON (hm2.id = hm.id AND hm2.activityhour = hm.activityhour)
+		INNER JOIN case_study.hourlysteps_merged hm3 ON (hm3.id = hm.id AND hm3.activityhour = hm.activityhour)
+ORDER BY hm.id, hm.activityhour 
+
+-- Create table case_study.hourlyactivity_merged
+-- joining this three tables into one
+
+CREATE TABLE case_study.hourlyactivity_merged AS ( 
+SELECT	hm.id, hm.activity_date, hm.activity_day_name, hm.activity_hour, hm.calories, hm2.totalintensity, hm2.averageintensity, hm3.steptotal  
+FROM 	case_study.hourlycalories_merged hm 
+		INNER JOIN case_study.hourlyintensities_merged hm2 ON (hm2.id = hm.id AND hm2.activityhour = hm.activityhour)
+		INNER JOIN case_study.hourlysteps_merged hm3 ON (hm3.id = hm.id AND hm3.activityhour = hm.activityhour)
+ORDER BY hm.id, hm.activity_date, hm.activity_hour);  
+
+-- validating this new table
+
+-- 56287 (same)
+SELECT 	sum(hm.calories)
+FROM 	case_study.hourlycalories_merged hm 
+WHERE 	hm.id = 1503960366
+
+-- 56287 (same)
+SELECT 	sum(hm.calories)
+FROM 	case_study.hourlyactivity_merged hm 
+WHERE 	hm.id = 1503960366
+
+-- 7766 (same)
+SELECT 	sum(hm.calories)
+FROM 	case_study.hourlycalories_merged hm 
+WHERE 	hm.id = 1503960366
+		AND hm.activity_day_name ILIKE 'monday'
+		
+-- 7766 (same)
+SELECT 	sum(hm.calories)
+FROM 	case_study.hourlyactivity_merged hm 
+WHERE 	hm.id = 1503960366
+		AND hm.activity_day_name ILIKE 'monday'
+
+-- 15 (same)
+SELECT 	sum(hm.totalintensity)
+FROM 	case_study.hourlyintensities_merged hm
+WHERE 	hm.id = 1624580081
+		AND hm.activity_hour = '03:00:00'
+		
+-- 15 (same)		
+SELECT 	sum(hm.totalintensity)
+FROM 	case_study.hourlyactivity_merged hm
+WHERE 	hm.id = 1624580081
+		AND hm.activity_hour = '03:00:00'
+
+--------- END validating this new table
+
+
+
