@@ -124,7 +124,7 @@ Membership gives users 24/7 access to fully personalized guidance on nutrition, 
 
 - Cleaning the data from selected tables (see [SQL file](sql/cleaning.sql))
 	- From the seven selected tables to be cleaned, the first table, dailyactivity_merged, did not need any cleaning. The other six tables needed cleaning and their timestamp columns were split into date ('mm/dd/yyyy'), day of the week and time ('hh24:mi:ss'). 
-	- The following sql code does the cleaning for the table heartrate_seconds_merged. For the full sql file, (see [SQL file](sql/cleaning.sql)).   
+	- The following sql code does the cleaning for the table heartrate_seconds_merged. For the full sql file, see [SQL file](sql/cleaning.sql).   
 
 ```sql
 ALTER TABLE case_study.heartrate_seconds_merged 
