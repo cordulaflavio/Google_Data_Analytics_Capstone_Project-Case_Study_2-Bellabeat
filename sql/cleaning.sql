@@ -173,3 +173,32 @@ WHERE wm."Date" IS NOT NULL;
 SELECT * FROM case_study.weightloginfo_merged wm -- OK
 
 ----------------  END cleaning weightloginfo_merged
+
+
+---------------- Trim to remove spaces on day_name columns 
+
+UPDATE 	case_study.heartrate_seconds_merged
+SET 	heartrate_day_name = trim(heartrate_day_name)
+WHERE 	heartrate_day_name IS NOT NULL;
+
+UPDATE 	case_study.hourlycalories_merged 
+SET 	activity_day_name = trim(activity_day_name)
+WHERE 	activity_day_name IS NOT NULL;
+
+UPDATE 	case_study.hourlyintensities_merged  
+SET 	activity_day_name = trim(activity_day_name)
+WHERE 	activity_day_name IS NOT NULL;
+
+UPDATE 	case_study.hourlysteps_merged  
+SET 	activity_day_name = trim(activity_day_name)
+WHERE 	activity_day_name IS NOT NULL;
+
+UPDATE 	case_study.sleepday_merged  
+SET 	sleep_day_name = trim(sleep_day_name)
+WHERE 	sleep_day_name IS NOT NULL;
+
+UPDATE 	case_study.weightloginfo_merged 
+SET 	weightlog_day_name = trim(weightlog_day_name)
+WHERE 	weightlog_day_name IS NOT NULL;
+
+---------------- END TRIM
