@@ -144,5 +144,6 @@ UPDATE case_study.heartrate_seconds_merged hsm
 SET heartrate_time = to_char(to_timestamp(hsm."Time",'mm/dd/yyyy hh12:mi:ss AM,PM'),'hh24:mi:ss')
 WHERE hsm."Time" IS NOT NULL;
 ```
-	
+
+## Phase 4: ANALYSE
 	
