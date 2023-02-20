@@ -19,23 +19,23 @@ SELECT * FROM case_study.heartrate_seconds_merged hsm
 ---------------- Cleaning heartrate_seconds_merged
 
 ALTER TABLE case_study.heartrate_seconds_merged 
-ADD COLUMN dat date,
-ADD COLUMN day_name varchar (15),
-ADD COLUMN tim varchar(8); 
+ADD COLUMN heartrate_date date,
+ADD COLUMN heartrate_day_name varchar (15),
+ADD COLUMN heartrate_time varchar(8); 
 
 UPDATE case_study.heartrate_seconds_merged hsm 
-SET dat = to_date(hsm."Time",'mm/dd/yyyy')
+SET heartrate_date = to_date(hsm."Time",'mm/dd/yyyy')
 WHERE hsm."Time" IS NOT NULL;
 
 UPDATE case_study.heartrate_seconds_merged hsm 
-SET day_name = to_char(dat, 'day')
-WHERE hsm.dat IS NOT NULL;
+SET heartrate_day_name = to_char(heartrate_date, 'day')
+WHERE hsm.heartrate_date IS NOT NULL;
 
 UPDATE case_study.heartrate_seconds_merged hsm 
-SET tim = to_char(to_timestamp(hsm."Time",'mm/dd/yyyy hh12:mi:ss AM,PM'),'hh24:mi:ss')
+SET heartrate_time = to_char(to_timestamp(hsm."Time",'mm/dd/yyyy hh12:mi:ss AM,PM'),'hh24:mi:ss')
 WHERE hsm."Time" IS NOT NULL;
 
-SELECT * FROM case_study.heartrate_seconds_merged hsm -- OK
+SELECT * FROM case_study.heartrate_seconds_merged hsm -- OK 
 
 ---------------- END cleaning heartrate_seconds_merged
 
