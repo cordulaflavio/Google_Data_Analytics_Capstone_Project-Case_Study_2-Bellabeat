@@ -257,7 +257,60 @@ FROM 	case_study.hourlyactivity_merged hm
 WHERE 	hm.id = 1624580081
 		AND hm.activity_hour = '03:00:00'
 
---------- END validating this new table
+
+-- Adding info about table data
+		
+ALTER TABLE case_study.dailyactivity_merged 
+ADD COLUMN about varchar(50);		
+
+UPDATE 	case_study.dailyactivity_merged 
+SET 	about = 'Daily Activity'
+WHERE 	about IS NULL;
+		
+SELECT * FROM case_study.dailyactivity_merged ;
+
+
+ALTER TABLE case_study.heartrate_seconds_merged 
+ADD COLUMN about varchar(50);		
+
+UPDATE 	case_study.heartrate_seconds_merged
+SET 	about = 'Heart Rate'
+WHERE 	about IS NULL;
+		
+SELECT * FROM case_study.heartrate_seconds_merged;
+
+
+ALTER TABLE case_study.hourlyactivity_merged 
+ADD COLUMN about varchar(50);		
+
+UPDATE 	case_study.hourlyactivity_merged
+SET 	about = 'Hourly Activity'
+WHERE 	about IS NULL;
+		
+SELECT * FROM case_study.hourlyactivity_merged;
+
+
+ALTER TABLE case_study.sleepday_merged 
+ADD COLUMN about varchar(50);		
+
+UPDATE 	case_study.sleepday_merged
+SET 	about = 'Sleep'
+WHERE 	about IS NULL;
+		
+SELECT * FROM case_study.sleepday_merged;
+
+
+ALTER TABLE case_study.weightloginfo_merged 
+ADD COLUMN about varchar(50);		
+
+UPDATE 	case_study.weightloginfo_merged
+SET 	about = 'Weight Log'
+WHERE 	about IS NULL;
+		
+SELECT * FROM case_study.weightloginfo_merged;
+
+
+----------- END VALIDATING
 
 -- So, the tables to be used on the next phases are:
 /*
