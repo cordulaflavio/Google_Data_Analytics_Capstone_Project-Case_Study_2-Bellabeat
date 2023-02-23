@@ -145,7 +145,7 @@ SET heartrate_time = to_char(to_timestamp(hsm."Time",'mm/dd/yyyy hh12:mi:ss AM,P
 WHERE hsm."Time" IS NOT NULL;
 ```
 
-- Trim to remove spaces on day_name columns
+-	- Trim to remove spaces on day_name columns
 	
 ```sql 
 UPDATE 	case_study.heartrate_seconds_merged
@@ -172,7 +172,8 @@ UPDATE 	case_study.weightloginfo_merged
 SET 	weightlog_day_name = trim(weightlog_day_name)
 WHERE 	weightlog_day_name IS NOT NULL;	
 ```
-- The last cleaning made merged the three hourly tables (hourlycalories_merged, hourlyintensities_merged and hourlysteps_merged) into hourlyactivity_merged (new merged table).
+
+-	- This next cleaning merged the three hourly tables (hourlycalories_merged, hourlyintensities_merged and hourlysteps_merged) into hourlyactivity_merged (new merged table).
 	- See [SQL cleaning file](sql/cleaning.sql) for more details.
 
 ```sql
@@ -182,6 +183,17 @@ FROM 	case_study.hourlycalories_merged hm
 		INNER JOIN case_study.hourlyintensities_merged hm2 ON (hm2.id = hm.id AND hm2.activityhour = hm.activityhour)
 		INNER JOIN case_study.hourlysteps_merged hm3 ON (hm3.id = hm.id AND hm3.activityhour = hm.activityhour)
 ORDER BY hm.id, hm.activity_date, hm.activity_hour);
+```
+-	- The last cleaning step add a column called "about" to store the content of the tables. For example:
+	- See [SQL cleaning file](sql/cleaning.sql) for more details.
+
+```sql
+ALTER TABLE case_study.dailyactivity_merged 
+ADD COLUMN about varchar(50);		
+
+UPDATE 	case_study.dailyactivity_merged 
+SET 	about = 'Daily Activity'
+WHERE 	about IS NULL;
 ```
 
 ## Phase 4: ANALYSE
