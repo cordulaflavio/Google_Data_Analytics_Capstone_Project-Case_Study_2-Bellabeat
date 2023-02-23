@@ -184,7 +184,7 @@ FROM 	case_study.hourlycalories_merged hm
 		INNER JOIN case_study.hourlysteps_merged hm3 ON (hm3.id = hm.id AND hm3.activityhour = hm.activityhour)
 ORDER BY hm.id, hm.activity_date, hm.activity_hour);
 ```
--	- The last cleaning step add a column called "about" to store the content of the tables. For example:
+-	- The last cleaning step added a column called "about" to store the content of the tables. For example:
 	- See [SQL cleaning file](sql/cleaning.sql) for more details.
 
 ```sql
