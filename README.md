@@ -10,7 +10,9 @@ Author: Flavio Ribeiro Córdula
 
 [![text](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/flavio-ribeiro-córdula-632a19234)
 
-Date: feb/mar 2023
+Date: March 2023
+
+[Tableau Dashboard](https://public.tableau.com/views/GoogleDataAnalyticsCapstoneProject-Bellabeat_16770718918010/Histria?:language=pt-BR&publish=yes&:display_count=n&:origin=viz_share_link)
 
 ---
 
