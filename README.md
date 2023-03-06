@@ -207,11 +207,11 @@ WHERE 	about IS NULL;
 1. About the data (see [SQL cleaning file](sql/analyze.sql))
      	
 	- There are 33 different users (participants). All 33 have data on daily activity and hourly activity. 24 users have data on sleep, 14 on heartrate and only 8 have data on weight.  
-	- 27,2% of users do not use the smartwatch while sleeping. 
-		- charging? Not comfortable? Do the users know about this "sleep" functionality? Is it worth it?
-	- 57,5% of users do not use the smartwatch for heart rate monitoring
-	- 75,7% of users do not use the smartwatch for weight log
-		- Is the manual input difficult?
+		- 27,2% of users do not use the smartwatch while sleeping. 
+			- charging? Not comfortable? Do the users know about this "sleep" functionality? Is it worth it?
+		- 57,5% of users do not use the smartwatch for heart rate monitoring
+		- 75,7% of users do not use the smartwatch for weight log
+			- Is the manual input difficult?
   	
 ```sql
 SELECT 'dailyactivity' as activity, count(DISTINCT dm.id)  FROM case_study.dailyactivity_merged dm
@@ -229,7 +229,7 @@ ORDER BY 2 DESC, 1 ASC
 2. More about the data (see [SQL cleaning file](sql/analyze.sql))
 
 	- 41 out of 67 (61,1%) inputs on weight log information were manually reported. That makes me assume that 26 inputs were obtained automatically.
-	- So, either the users do not trust the "auto-collected weight data" functionality, or they don’t know to use it properly.
+		- So, either the users do not trust the "auto-collected weight data" functionality, or they don’t know to use it properly.
 ```sql
 SELECT * 
 FROM case_study.weightloginfo_merged wm 
