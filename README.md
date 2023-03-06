@@ -265,3 +265,25 @@ order BY 1
 ```
 
 ## Phase 5: SHARE 
+
+## Phase 5: ACT 
+
+- Recommendations
+
+	- There are only 33 different fitbit users (participants). 
+
+	- 24 (72,7%) participants used their smartwatch while sleeping. 
+		- Maybe they did not feel comfortable using it. Is there another type/shape of device that can be more “sleep friendly”? Perhaps the Leaf tracker? 
+
+	- Only 14 (42,4%) users monitored their heartrate data. 
+		- Shouldn’t this be automatic? You wear it, the heart rate monitor is on. Battery issues? 
+
+	- The participants spend most of their time doing some sort of sedentary activity. A pop-up notification (or reminder) encouraging users to stand up and move around (positive message) is a most have. 
+
+	- The fitbit (smartwatch) was not used 15% of the time. It may be a battery issue. 
+
+	- Due to the limitations of the data collected, I would recommend another study, with larger sampling and more details data, such as age, gender, profession, location. Also, Bellabeat could conduct a survey to get a deeper understanding on focused questions, such as:
+		- How people use smart devices while sleep? 
+		- What do they think about the weight function? Do they understand it?
+		- What kind of sports users practice?  
+		- What about an smartwatch with an mobile phone app to better sync information?
