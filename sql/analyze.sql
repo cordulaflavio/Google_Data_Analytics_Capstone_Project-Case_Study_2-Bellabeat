@@ -36,8 +36,8 @@ SELECT *
 FROM case_study.weightloginfo_merged wm 
 WHERE ismanualreport IS TRUE 
 
--- 41 out of 67 (61,1%)inputs on weight log information were manually reported. That makes me assume that 26 inputs were obtained automatically.
--- So, ether the users do not trust the "auto-collected weight data" functionality or they don’t know to use it properly.
+-- 41 out of 67 (61,1%) inputs on weight log information were manually reported. That makes me assume that 26 inputs were obtained automatically.
+-- So, either the users do not trust the "auto-collected weight data" functionality, or they don’t know to use it properly.
 
 
 
@@ -53,6 +53,17 @@ FROM case_study.dailyactivity_merged dm
 -- So, 3,69 hours of no use at all (on avg)
 
 
+SELECT 	dm.activitydate,
+		round((avg(veryactiveminutes))/60::NUMERIC,2) AS very_active_hours,
+		round((avg(fairlyactiveminutes))/60::NUMERIC,2) AS fairly_active_hours,
+		round((avg(lightlyactiveminutes))/60::NUMERIC,2) AS lightly_active_hours,
+		round((avg(sedentaryminutes))/60::NUMERIC,2) AS sedentary_hours
+FROM case_study.dailyactivity_merged dm 
+GROUP BY dm.activitydate 
+order BY 1
+
+
+
 SELECT 	activity_hour, 
 		avg(calories) AS avg_calories,
 		avg(steptotal) AS avg_steps 
@@ -62,3 +73,15 @@ GROUP BY activity_hour
 ORDER BY 3 DESC 
 
 -- can not get much info from this!
+
+SELECT 	DISTINCT id 
+FROM 	case_study.heartrate_seconds_merged hsm 
+WHERE 	hsm.heartrate_day_name ILIKE 'monday' 
+
+
+SELECT * FROM case_study.dailyactivity_merged dm 
+
+SELECT 	id, sleep_day_name, avg(totalminutesasleep)  
+FROM 	case_study.sleepday_merged sm 
+GROUP BY id, sleep_day_name
+ORDER BY 1,2
