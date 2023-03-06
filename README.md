@@ -267,6 +267,8 @@ order BY 1
 
 ## Phase 5: SHARE 
 
+- [Google Data Analytics Capstone Project - Bellabeat](https://public.tableau.com/views/GoogleDataAnalyticsCapstoneProject-Bellabeat_16770718918010/Histria?:language=pt-BR&publish=yes&:display_count=n&:origin=viz_share_link)
+
 
 
 
