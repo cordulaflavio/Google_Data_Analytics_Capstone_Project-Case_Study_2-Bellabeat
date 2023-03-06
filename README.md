@@ -282,7 +282,7 @@ order BY 1
 
 	- The fitbit (smartwatch) was not used 15% of the time. It may be a battery issue. 
 
-	- Due to the limitations of the data collected, I would recommend another study, with larger sampling and more details data, such as age, gender, profession, location. Also, Bellabeat could conduct a survey to get a deeper understanding on focused questions, such as:
+	- Due to the limitations of the data collected, I would recommend another study, with larger sampling and more detail data, such as age, gender, profession, location. Also, Bellabeat could conduct a survey to get a deeper understanding on focused questions, such as:
 		- How people use smart devices while sleep? 
 		- What do they think about the weight function? Do they understand it?
 		- What kind of sports users practice?  
