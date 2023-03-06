@@ -251,4 +251,17 @@ SELECT 	round((avg(veryactiveminutes+fairlyactiveminutes+lightlyactiveminutes))/
 FROM case_study.dailyactivity_merged dm 
 ```
 
+4.  Daily Activity Intensity (hours/day)
+
+```sql
+SELECT 	dm.activitydate,
+		round((avg(veryactiveminutes))/60::NUMERIC,2) AS very_active_hours,
+		round((avg(fairlyactiveminutes))/60::NUMERIC,2) AS fairly_active_hours,
+		round((avg(lightlyactiveminutes))/60::NUMERIC,2) AS lightly_active_hours,
+		round((avg(sedentaryminutes))/60::NUMERIC,2) AS sedentary_hours
+FROM case_study.dailyactivity_merged dm 
+GROUP BY dm.activitydate 
+order BY 1
+```
+
 ## Phase 5: SHARE 
