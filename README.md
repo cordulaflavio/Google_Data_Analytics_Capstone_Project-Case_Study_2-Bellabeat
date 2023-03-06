@@ -52,9 +52,9 @@ Membership gives users 24/7 access to fully personalized guidance on nutrition, 
 	- Analyze FitBit Fitness Tracker Data to obtain insights and help guide marketing strategy for Bellabeat to become a larger player in the global smart device market.
 
 - Questions:
-	- Question 1
-	- Question 2
-	- ... ?????????????????????????????????????????????
+	- What are the trends in this FitBit device?
+	- How could these trends apply to Bellabeat customers?
+	- How could these trends positively influence the Bellabeat marketing strategy?
  
 ### Phase 2: PREPARE
 
