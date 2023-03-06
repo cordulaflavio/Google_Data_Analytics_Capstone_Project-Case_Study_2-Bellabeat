@@ -7,8 +7,8 @@
 
 ---
 Author: Flavio Ribeiro Córdula  
-
-[![text](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/flavio-ribeiro-córdula-632a19234)
+- linkedin.com/in/cordulaflavio
+- cordulaflavio@gmail.com
 
 Date: March 2023
 
