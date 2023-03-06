@@ -250,3 +250,5 @@ SELECT 	round((avg(veryactiveminutes+fairlyactiveminutes+lightlyactiveminutes))/
 		24-round((avg(veryactiveminutes+fairlyactiveminutes+lightlyactiveminutes+sedentaryminutes))/60::NUMERIC,2) AS no_use
 FROM case_study.dailyactivity_merged dm 
 ```
+
+## Phase 5: SHARE 
