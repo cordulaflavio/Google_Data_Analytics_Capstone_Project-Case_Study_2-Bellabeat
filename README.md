@@ -10,9 +10,7 @@ Author: Flavio Ribeiro Córdula
 
 [![text](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/flavio-ribeiro-córdula-632a19234)
 
-Start date: 09/02/2023
-
-End date: XX/XX/XXXX
+Date: feb/mar 2023
 
 ---
 
