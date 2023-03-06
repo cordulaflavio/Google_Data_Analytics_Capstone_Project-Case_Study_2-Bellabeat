@@ -270,7 +270,7 @@ order BY 1
 - [Google Data Analytics Capstone Project - Bellabeat](https://public.tableau.com/views/GoogleDataAnalyticsCapstoneProject-Bellabeat_16770718918010/Histria?:language=pt-BR&publish=yes&:display_count=n&:origin=viz_share_link)
 
 
-![alt text](https://github.com/flaviocordula/Google_Data_Analytics_Capstone_Project-Case_Study_2-Bellabeat/blob/main/imagens/Google Data Analytics Capstone Project - Bellabeat.png?raw=true)
+![alt text](https://github.com/flaviocordula/Google_Data_Analytics_Capstone_Project-Case_Study_2-Bellabeat/blob/main/imagens/Google_Data_Analytics _Capstone_Project-Bellabeat.png?raw=true)
 
 ## Phase 6: ACT 
 
