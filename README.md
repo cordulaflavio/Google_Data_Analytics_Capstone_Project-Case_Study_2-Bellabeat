@@ -19,7 +19,7 @@ Date: March 2023
 
 - Bellabeat, is a high-tech manufacturer of health-focused products for women. Urška Sršen, cofounder and Chief Creative Officer of Bellabeat, believes that analyzing smart device fitness data could help unlock new growth opportunities for the company.
 
-- In a nutshel (and assuming I work for Bellabeat), the task here is to identify consumption patterns in users of FitBit products (a competitor business) that can support the Bellabeat's Marketing strategy. 
+- In a nutshell (and assuming I work for Bellabeat), the task here is to identify consumption patterns in users of FitBit products (a competitor business) that can support the Bellabeat's Marketing strategy. 
 
 - This Case Study follows the six data analysis phases designed by Google and makes use of PostgreSQL and Tableau.
 
@@ -109,8 +109,8 @@ Membership gives users 24/7 access to fully personalized guidance on nutrition, 
 		- Most tables contain 33 distinct users, except for heartrate_seconds_merged with 14 and minutesleep_merged and sleepday_merged with 24. 
 			- From this very simple verification, one can infer that only 14 users monitored their heartrate data and 24 (out of 33) actually used their smartwatch while sleeping.
 	2. Select tables
-		- Discart minute-level tables. To much detail for the first case study version!
-		- Discart dailycalories_merged, dailyintensities_merged and dailysteps_merged.
+		- Discard minute-level tables. Too much detail for the first case study version!
+		- Discard dailycalories_merged, dailyintensities_merged and dailysteps_merged.
 			- Their data are all included in the dailyactivity_merged table. 
 		- So, the tables to be cleaned and used on the next phases are:
 			- dailyactivity_merged
@@ -197,7 +197,7 @@ WHERE 	about IS NULL;
 
 ## Phase 4: ANALYSE
 	
-- The tables to be analysed are:
+- The tables to be analyzed are:
 	- dailyactivity_merged
 	- heartrate_seconds_merged
 	- hourlyactivity_merged
@@ -292,4 +292,4 @@ order BY 1
 		- How people use smart devices while sleep? 
 		- What do they think about the weight function? Do they understand it?
 		- What kind of sports users practice?  
-		- What about an smartwatch with an mobile phone app to better sync information?
+		- What about a smartwatch with an mobile phone app to better sync information?
