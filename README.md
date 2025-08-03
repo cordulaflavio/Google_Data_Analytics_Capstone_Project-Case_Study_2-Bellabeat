@@ -6,8 +6,7 @@
 ###### Bellabeat Fitness Data Analysis
 
 ---
-Author: Flavio Ribeiro Córdula  
-[LinkedIn](https://www.linkedin.com/in/cordulaflavio) 
+Author: Flavio Ribeiro Córdula [![LinkedIn](https://img.shields.io/badge/LinkedIn--blue?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/cordulaflavio)
 
 Date: March 2023
 
