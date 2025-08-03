@@ -7,7 +7,7 @@
 
 ---
 Author: Flavio Ribeiro Córdula  
-- linkedin.com/in/cordulaflavio
+[LinkedIn](https://www.linkedin.com/in/cordulaflavio) 
 
 Date: March 2023
 
